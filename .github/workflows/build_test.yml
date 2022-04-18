@@ -33,6 +33,6 @@ jobs:
     env: ${{ matrix.env }}
     steps:
       - name: Repository checkout
-        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
+        uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748
       - name: Build check (${{ env.COMPILER }}-${{ env.COMPILER_VERSION }})
         run: sudo -E .github/workflows/build_test.sh
